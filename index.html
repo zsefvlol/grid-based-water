@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid-based Water</title>
+    <style>
+        .line, .wall, .water, .air{
+            padding: 0;
+            margin: 0;
+            height: 20px;
+        }
+        .wall, .water, .air{
+            float: left;
+            height: 18px;
+            width: 20px;
+            text-align: center;
+            border: solid lightgray 1px;
+        }
+        .wall{
+            background-color: brown;
+        }
+        .water{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="grid"></div>
+        <div id="ctrl-btns">
+            <button onclick="javascript:gridWater.play();">Play</button>
+            <button onclick="javascript:gridWater.next();">Next</button>
+        </div>
+    </div>
+    <div class="footer">
+        <script src="jquery.min.js"></script>
+        <script src="main.js"></script>
+    </div>
+</body>
+</html>
